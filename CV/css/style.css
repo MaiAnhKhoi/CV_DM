@@ -119,4 +119,46 @@ main{
         margin-left: -20px;
     }
 }
+@media (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
 
+  .profile-card {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .profile-img {
+    margin: 0 auto 20px;
+  }
+
+  .profile-info {
+    width: 100%;
+    padding: 30px 20px;
+  }
+
+  .profile-info::before {
+    display: none; /* Ẩn cái hình lõm khi thu nhỏ */
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  aside {
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+
+  main {
+    padding-left: 0;
+  }
+
+  .phone, .mail, .facebook, .address {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
